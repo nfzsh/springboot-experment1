@@ -14,13 +14,7 @@ public class UserRepository {
 
     public void addUserAddress(){
         User user = new User("zsh");
-        try {
-            em.persist(user);
-            System.out.println("user写入成功");
-        }
-        catch(Exception e){
-            System.out.println("user写入失败");
-        }
+        em.persist(user);
         Address address1 = new Address("9*");
         address1.setUser(user);
         em.persist(address1);
