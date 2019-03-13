@@ -15,7 +15,7 @@ public class Address {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String detail;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.PERSIST)
     private User user;
     @Column(columnDefinition = "TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP",
     insertable = false,updatable = false)

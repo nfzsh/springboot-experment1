@@ -15,7 +15,6 @@ import javax.persistence.PersistenceContext;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-@Rollback(value = false)
 public class Experiment01OrmApplicationTests {
 
     @Autowired
